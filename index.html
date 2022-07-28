@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div class="container">
+ <header>
+    <h1 id='title'>Rytmika w przedszkolu</h1>
+    <p id="description">Dziękuję za poświęcony czas w celu wypełnienia ankiety.</p>
+</header>
+
+<fieldset>
+    <form id="survey-form">
+
+<div class="form-group">
+       <label for="name-label" id="name-label">Imię:</label>
+  <input type="text" id="name" name="name" placeholder="Wpisz swoje imię"  class="one" required><br></br>
+</div>
+
+<div class="form-group">
+  <label for="email-label" id="email-label">Email:</label>
+  <input type="email" id="email" name="email" class="one" placeholder="Wpisz swój email"required><br><br>
+</div>
+
+<div class="form-group">
+  <label for="number-label" id="number-label">Wiek dziecka:</label>
+  <input type="number" id="number" name="age" min="0" max="7" placeholder="Podaj wiek dziecka" class="one"required><br><br>
+</div>
+
+<div class="form-group">
+<p>Wybierz opcję, która określa Twoją rolę:</p>
+    <select name="role" id="dropdown" class="form-control">
+    <option disabled selected value>Wybierz swoją rolę</option>
+    <option>Rodzic</option>
+    <option>Nauczyciel wychowania przedszkolnego</option>
+    <option>Inne</option>
+    </select><br></br>
+</div>
+
+<div class="form-group">
+<p>Czy polecasz zajęcia rytmiki, jako zajęcia dodatkowe w przedszkolu?</p>
+     <input type="radio" id="zdecydowanie" name="answer" value="Zdecydowanie"
+  <label for="zdecydowanie">Zdecydowanie</label><br>
+ <input type="radio" id="może" name="answer" value="Może">
+ <label for="może">Może</label><br>
+ <input type="radio" id="niekoniecznie" name="answer" value="Niekoniecznie">
+ <label for="niekoniecznie">Niekoniecznie</label><br></br>
+</div>
+
+
+<div class="form-group">
+<p>Czego oczekujesz po zajęciach rytmiki?<span class="clue">(Możesz wybrać więcej niż jedną odpowiedź)</span></p>
+  <label>
+  <input name="oczekiwania" value="rozwój-słuchu-muzycznego" type="checkbox" class="input-checkbox">Rozwój słuchu muzycznego</label><br>
+  <label>
+  <input name="oczekiwania" value="rozwój-skali-głosowej" type="checkbox" class="input-checkbox">Rozwój skali głosowej</label><br>
+  <label>
+  <input name="oczekiwania" value="poprawa-pamięci-muzycznej" type="checkbox" class="input-checkbox">Poprawa pamięci muzycznej</label><br>
+  <label>
+  <input name="oczekiwania" value="integracja-z-grupą" type="checkbox" class="input-checkbox">Integracja z grupą</label><br></br>
+  </div>
+
+
+  <div class="form-group">
+    <p>Miejsce na Twój komentarz/ sugestie</p>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Wpisz swój komentarz/sugestie"></textarea><br></br>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Wyślij</button>
+      </form>
+      </div>
+      </fieldset>
+  </body
+  </html>
